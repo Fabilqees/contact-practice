@@ -4,6 +4,7 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+/*---Hero Section---*/
 .hero {
     height: 100vh;
     width: 100%;
@@ -102,6 +103,8 @@ h4 {
     top: 6px;
     right: 6px;
 }
+
+/*--About Section---*/
 .main {
     display: flex;
     width: 100%;
@@ -162,6 +165,7 @@ button:hover {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+/*---Services----*/
 .service {
     background: rgb(36, 35, 35);
     width: 100%;
@@ -226,6 +230,8 @@ h5 {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
+/*----Contact Me------*/
 .contact {
     width: 100%;
     height: 290px;
@@ -256,6 +262,8 @@ h5 {
     cursor: pointer;
     border: 2px solid #f9004d;
 }
+
+/*---Footer---*/
 footer {
     position: relative;
     background-color: #101010;
@@ -306,4 +314,55 @@ footer p:nth-child(2){
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
+}
+
+/*---Media Query--*/
+@media(max-width: 768px) {
+    .hero , .service{
+        width: 100%;
+    }
+    nav{
+        float: none;
+        text-align: center;
+    }
+        nav ul li{
+            display:block;
+        }
+        .service {
+            width: 100%;
+            padding: 15%;
+        }
+
+.about, .box {
+    display: block;
+}
+
+.about-me h2 {
+    margin-top: 15px;
+}
+
+.about-me p {
+
+    width: 70%;
+    line-height: 20px;
+}
+.about button {
+    margin: 0 20%;
+}
+.box .card {
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.con h2 {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact p {
+    font-size: 25px;
+}
+
 }
